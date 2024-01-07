@@ -49,14 +49,14 @@ h3 {
     text-decoration: underline;
     padding-top: 20px;
 }
-#about-me, #content, #purpose-header {
+#about-me, #content, #purpose-header, #skills {
     display: inline-block;
     
     vertical-align: text-top;
 
 }
 
-#purpose-header {
+#purpose-header, #skills {
     background-color: purple;
     color: white;
 
@@ -175,6 +175,24 @@ figcaption {
 #purpose-header {
     padding-top: 40px;
     padding-left: 20px;
+}
+
+#skills {
+    max-width: 70%;
+    min-width: 70%;
+    padding-top: 20px;
+    padding-left: 20px; 
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    margin-right: 11px;
+    float: right;
+    
+    
+    
+}
+
+h6 {
+    color: yellow;
 }
 
 #pourqoui figure { 
