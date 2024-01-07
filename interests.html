@@ -4,53 +4,125 @@
         <meta charset="utf-8">
         <meta name="viewport">
         <link rel="icon" type="image/x-icon" href="./images/Alex/moi.jpeg"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
         <title>My interests</title>
     </head>
 
     <body>
-        <h3 id="interests-header"> My interests include: </h3>
-        <div>
-            <ul>
-                <li id="professional">
-                    <span>Professional:</span>      
-                    <ul>
-                        <li>Language education</li>
-                        <li>Software development</li>
-                        
-                            <ul>
-                                <li>Frontend design</li>
-                                <li>Backend design</li>
-                            </ul>
-                        
-                        
-                    </ul>
-                </li>
-                <br>
-                <li id="personal">
-                
-                    <span>Personal:</span>      
-                    <ul>
-                        <li>Watching urban birds </li>
-                        <li>Travel</li>
-                        <li>French literature</li>
-                        <li>World history</li>
-                    </ul>
-                </li>
-                
-            </ul>
-        </div> 
+        
+        <header>        
+            <div class="container" id="page-header-container">
+              <div class="row">
+                <div class="col-12">
+  
+                  
+                  <nav class="main-nav">
+                    <a href="index.html" class="logo">
+                      <h4>Alex's website</h4>
+                    </a>
+                      <ul>
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="interests.html">My interests</a></li>
+                        <li><a href="purpose.html">What I will be doing soon</a></li>
+                        <li><a href="#details">Contact</a></li>
+                      </ul>
+                    <!-- <a href="index.html">About</a>
+                    <a href="interests.html" target="_blank">My interests</a>
+                    <a href="purpose.html" target="blank">What I will be doing soon</a> -->
+                  </nav>
+                  
+              </div>
+            </div>
+          </div>
+        </header>
+    
+      <div class="content-wrapper"> 
 
-        <div class="scroll-container">
-            <img src="./images/interests/ibis-palm.jpeg" alt="Ibises on a tree in Sydney" title="Ibises on a tree in Sydney">
-            <img src="./images/interests/straw-necked.jpeg" alt="A straw-necked ibis" title="A straw-necked ibis">
-            <img src="./images/interests/montpellier.jpg" alt="Montpellier" title="Montpellier, a great city for leisure and study">
-            <img src="./images/interests/notredame.jpg" alt="Notre Dame by Hugo" title="The perfect novel for history nerds">
+        <div class="image-container">
+          
+          <div class="interest-image-card image-left"> 
+            <div class="interest-image">
+              <img src="./images/interests/ibis-palm.jpeg" alt="Ibises on a tree in Sydney" title="Ibises on a tree in Sydney">
+            </div>
+            <div class="interest-image-text">
+              <p>The White Ibis, or Bin Chicken, is one of my favourite things about Australian cities. No other country in the world has such formidable urban birds.</p>
+            </div> 
+          </div>
+            
+          <div class="interest-image-card image-right"> 
+            <div class="interest-image-text">
+             <p>The Straw-necked Ibis, the Bin Chook's regional cousin. Its iridescent feathers are something to see. </p>
+            </div>
+            <div class="interest-image">
+              <img src="./images/interests/straw-necked.jpeg" alt="A straw-necked ibis" title="A straw-necked ibis">
+            </div>
           </div>
 
-        <footer id="interests-footer">
-            <a href="index.html">Back to main</a>
+          <div class="interest-image-card image-left"> 
+            <div class="interest-image">
+              <img src="./images/interests/montpellier.jpg" alt="Montpellier" title="Montpellier, a great city for leisure and study">
+            </div>
+            <div class="interest-image-text">
+              <p>The White Ibis, or Bin Chicken, is one of my favourite things about Australian cities. No other country in the world has such formidable urban birds.</p>
+            </div> 
+          </div>
+
+          <div class="interest-image-card image-right"> 
+            <div class="interest-image-text">
+             <p>The Straw-necked Ibis, the Bin Chook's regional cousin. Its iridescent feathers are something to see. </p>
+            </div>
+            <div class="interest-image">
+              <img src="./images/interests/montpellier.jpg" alt="Montpellier" title="Montpellier, a great city for leisure and study">
+            </div>
+          </div>
+
+
+          <div class="interest-image-card image-left"> 
+            <div class="interest-image">
+              <img src="./images/interests/notredame.jpg" alt="Notre Dame by Hugo" title="The perfect novel for history nerds">
+            </div>
+            <div class="interest-image-text">
+              <p>The White Ibis, or Bin Chicken, is one of my favourite things about Australian cities. No other country in the world has such formidable urban birds.</p>
+            </div> 
+          </div>
+      
+           
+          </div>
+      </div>
+          <footer id="details">
+            <div>
+              <h3>Contact</h3>
+              <p>
+                <a href="mailto:alex@gmail.com">alex@gmail.com</a><br>
+                +61 555 55 55<br>
+                <br>
+                
   
-        </footer>
+              </p>
+            </div>
+            
+            
+      
+            <div>
+              <h3>Sample projects</h3>
+              <ul class="footer-nav">
+                <li><a href="#" target="_blank">Sample Project 1</a></li>
+                <li><a href="#" target="_blank">Sample Project 2</a></li>
+                <li><a href="#" target="_blank">Sample project 3</a></li>
+              </p>
+            </div>
+      
+            <div>
+              <h3 id="follow-title">Follow</h3>
+              <ul class="footer-nav nav-horizontal"> 
+                <li><a href="github.com/alexpersique" target="_blank"><i class="bi bi-github"></i></a></li>
+                <li><a href="#" target="_blank"><i class="bi bi-facebook"></i></a></li>
+                <li><a href="#" target="_blank"><i class="bi bi-twitter-x"></i></a></li>
+              </ul>
+            </div>
+          </footer>
 
     </body>

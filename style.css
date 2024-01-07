@@ -3,7 +3,12 @@ body {
     width: 100%;
     height: 100%;
     margin: 0;
-    
+    padding: 0;
+    padding-top: 30px;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
    
 }
 
@@ -12,55 +17,121 @@ header {
     align-items: start;
     justify-content: space-around;
 }
+#page-title {
+    padding-left: 40px;
+    padding-top: 25px;
 
-#elaborated h3 {
-    padding-left: 80px;
 }
 
-#elaborated div {
-    padding-left: 55px;
+
+#about-me a {
+    color: navy;
 }
 
-#putting-to-use {
-    padding-top: 20px;
-    padding-left: 100px;
+#about-me #personal a {
+    color: yellow;
 }
+
+
+
+#professional, #personal {
+   display: inline-block;
+   width: 48%;
+}
+
+
+
 
 h3 {
     font-style: italic;
     text-decoration: underline;
+    padding-top: 20px;
 }
-#about-me, #content {
+#about-me, #content, #purpose-header {
     display: inline-block;
-    width: 40%;
+    
     vertical-align: text-top;
 
 }
 
+#purpose-header {
+    background-color: purple;
+    color: white;
 
-#about-me {
-    padding-left: 10px;
 }
+
+#content figure {
+    max-width: 400px;
+    float: right;
+    text-align: center;
+}
+
+
+.column-right-border, .image-left {
+    border-radius: 25px;
+    border-top-right-radius: 0%;
+    border-bottom-left-radius: 0%;
+}
+
+
+
+ .column-left-border, .image-right   {
+    border-radius: 25px;
+    border-top-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+
+.image-left img {
+    border-radius: 50px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.image-right img {
+    border-radius: 50px;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+
+
+#about-me, #putting-to-use, #purpose-header {
+    max-width: 70%;
+    min-width: 70%;
+    padding-top: 20px;
+}
+
 
 #content img {
     width: 400px;
     height: auto;
 }
 
-.wrapper {
-    padding-left: 10px;
-}
-
-
-#future, #interests, #elaborated {
-    padding-left: 10px;
-}
-
-figure {
-
-    text-align: center ;
+.content-wrapper {
+    padding-left: 35px;
     
-} 
+
+}
+
+#profile-wrap {
+    vertical-align: bottom;
+}
+
+.text-content {
+    padding-left: 5px !important;
+}
+
+ /* #future, #interests, #elaborated {  
+    padding-left: 10px;
+} */
+
+
+
+#elaborated {
+    background-color: purple;
+    color: white;
+   
+}
 
 
 
@@ -70,21 +141,21 @@ figcaption {
     text-align: center;
 }
 
-h1  {
-    font-family: "Copperplate" ;
+.main-nav {
+    font-family: "Copperplate" ; 
 }
 
+.main-nav a {
+    text-decoration: none;
+}
 
  #personal {
     padding-top: 50px;
 }
 
- #interests-header {
-    padding-left: 25px;
-    
-} 
+ 
 
-*/
+
 
 #why {
     width: 400px;
@@ -104,37 +175,131 @@ h1  {
 }
 
 
-footer {
-    
-    padding-left: 20px;
-}
+
 
 #interests-footer {
     padding-top: 25px;
 }
 
 
-div.scroll-container {
-    background-color: blue;
-    overflow: auto;
-    white-space: nowrap;
+div.image-container {
+    background-color: purple;
     padding: 20px;
+    max-width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+
   }
   
-  div.scroll-container img {
+  div.image-container img {
     padding: 20px;
-    width:   300px;
-    height: 200px;
-  }
-  
-  #details {
-    background: greenyellow;
+    
   }
 
+  #details {
+   background: greenyellow;
+   width: 100%;
+   padding: 0;
+   max-width: 100%;
+   min-width: 100%;
+   padding-top: 20px;
+   margin-top: auto; 
+
+  }
 
   #details div {
-    width: 33%;
+    max-width: 33%;
+    min-width: 33%;
     text-align: center;
-    background: greenyellow;
-    float: left;
+    display: inline-block;
+    vertical-align: top;
   }
+ 
+ #page-header-container {
+    max-width: 100%;
+    width: 100%;
+    min-width: 100%;
+    padding: 0;
+
+ }
+ .main-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+    height: 30px;
+
+ }
+ .main-nav ul {
+    display: inline;
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+   
+  }
+
+   .main-nav li {
+    display: inline;
+  } 
+
+  .main-nav h4 {
+    display: inline; 
+  } 
+
+  .main-nav a {
+    padding-left: 20px;
+  }
+
+ .footer-nav {
+  list-style-type: none;
+ }
+
+ #follow-title {
+    padding-left: 20px;
+ }
+
+
+ .interest-image {
+    width: 49%;
+    display: inline-block;
+
+}
+
+.interest-image img {
+    width: 100%;
+    height: auto;
+
+}
+.interest-image-text {
+    width: 49%;
+    display: inline-block
+}
+
+.nav-horizontal li {
+    display: inline-block;
+
+}
+
+.nav-horizontal i  {
+    font-size: 35px;
+}
+
+.interest-image-card {
+    
+    background-color: white;
+    margin-bottom: 15px;
+}
+
+.bi-github, .bi-twitter-x {
+    color: black;
+}
+
+.image-right .interest-image-text {
+    padding-left: 10px;
+}

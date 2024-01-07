@@ -4,12 +4,52 @@
         <meta charset="utf-8">
         <meta name="viewport">
         <link rel="icon" type="image/x-icon" href="./images/Alex/moi.jpeg"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
         <title>Why I'm learning software development</title>
     </head>
     
     <body>
-        <header id="purpose-header">
+      
+      <header>        
+        <div class="container" id="page-header-container">
+          <div class="row">
+            <div class="col-12">
+
+              
+              <nav class="main-nav">
+                <a href="index.html" class="logo">
+                  <h4>Alex's website</h4>
+                </a>
+                  <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="interests.html">My interests</a></li>
+                    <li><a href="purpose.html">What I will be doing soon</a></li>
+                    <li><a href="#details">Contact</a></li>
+                  </ul>
+                <!-- <a href="index.html">About</a>
+                <a href="interests.html" target="_blank">My interests</a>
+                <a href="purpose.html" target="blank">What I will be doing soon</a> -->
+              </nav>
+              
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+      <div class="content-wrapper"> 
+
+        <div id="content">
+          <figure> 
+            <img id="why" src="./images/Alex/why.jpeg" alt="why?" class="column-left-border">
+          </figure>
+        
+        </div>
+        
+        <section id="purpose-header" class=" column-right-border">
           <section>
             <h1>
                 Why become a software engineer?
@@ -20,19 +60,43 @@
             
         
         
-          <div id="pourquoi">
-            <figure> 
-              <img id="why" src="./images/Alex/why.jpeg" alt="why?">
-            </figure>
           
+        </section>
+      </div>
+       
+        <footer id="details">
+          <div>
+            <h3>Contact</h3>
+            <p>
+              <a href="mailto:alex@gmail.com">alex@gmail.com</a><br>
+              +61 555 55 55<br>
+              <br>
+              
+
+            </p>
           </div>
-        </header>
-
-     
-        <footer>
-          <a href="index.html">Back to main</a>
-
+          
+          
+    
+          <div>
+            <h3>Sample projects</h3>
+            <ul class="footer-nav">
+              <li><a href="#" target="_blank">Sample Project 1</a></li>
+              <li><a href="#" target="_blank">Sample Project 2</a></li>
+              <li><a href="#" target="_blank">Sample project 3</a></li>
+            </p>
+          </div>
+    
+          <div>
+            <h3 id="follow-title">Follow</h3>
+            <ul class="footer-nav nav-horizontal"> 
+              <li><a href="github.com/alexpersique" target="_blank"><i class="bi bi-github"></i></a></li>
+              <li><a href="#" target="_blank"><i class="bi bi-facebook"></i></a></li>
+              <li><a href="#" target="_blank"><i class="bi bi-twitter-x"></i></a></li>
+            </ul>
+          </div>
         </footer>
+      
     </body>
 </html>
 
