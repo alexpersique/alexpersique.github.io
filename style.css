@@ -28,9 +28,11 @@ header {
     color: navy;
 }
 
-#about-me #personal a {
+
+#about-me #professional a, #about-me #personal a {
     color: yellow;
 }
+
 
 
 
